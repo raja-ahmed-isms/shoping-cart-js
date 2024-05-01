@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+   <link href= 
+"https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" 
+        rel="stylesheet"> 
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+</head>
+<body>
+   <header class="bg-gray-900 text-white py-4 px-4 sm:px-8">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+        <!-- Logo -->
+        <div class="flex-shrink-0">
+            <a href="#" class="text-xl font-semibold">Your Logo</a>
+        </div>
+        <!-- Navigation Menu -->
+        <nav class="hidden md:flex space-x-4">
+            <a href="#" class="hover:text-gray-400 transition duration-300 ease-in-out">Home</a>
+            <a href="#products" class="hover:text-gray-400 transition duration-300 ease-in-out">Products</a>
+            
+           
+        </nav>
+         <div class="box">
+        <div class="cart-count">0</div>
+        <ion-icon name="cart"  id="cart-icon" ></ion-icon>
+      </div>
+
+      <div class="cart">
+        <div class="cart-title text-gray-900">Cart Items</div>
+        <div class="cart-content">
+<!--
+          <div class="cart-box">
+            <img src="images/97.jpg" class="cart-img">
+            <div class="detail-box">
+              <div class="cart-food-title">Special Dosai</div>
+              <div class="price-box">
+                <div class="cart-price">Rs.72</div>
+                 <div class="cart-amt">Rs.72</div>
+             </div>
+              <input type="number" value="1" class="cart-quantity">
+            </div>
+            <ion-icon name="trash" class="cart-remove"></ion-icon>
+          </div>
+
+          <div class="cart-box">
+            <img src="images/97.jpg" class="cart-img">
+            <div class="detail-box">
+              <div class="cart-food-title">Special Dosai</div>
+              <div class="price-box">
+                <div class="cart-price">Rs.72</div>
+                 <div class="cart-amt">Rs.72</div>
+             </div>
+              <input type="number" value="1" class="cart-quantity">
+            </div>
+            <ion-icon name="trash" class="cart-remove"></ion-icon>
+          </div>
+        -->
+        </div>
+        
+      <div class="total">
+        <div class="total-title text-gray-500">Total</div>
+        <div class="total-price text-gray-700">Rs.0</div>
+      </div>
+
+      <button class="btn-buy">Place Order</button>
+
+      <ion-icon name="close" id="cart-close"></ion-icon>
+
+      </div>
+        <!-- Hamburger Icon (Mobile Menu) -->
+        <div class="md:hidden">
+            <button id="mobile-menu-button" class="text-white focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M4 6a1 1 0 011-1h14a1 1 0 110 2H5a1 1 0 01-1-1zm0 5a1 1 0 011-1h14a1 1 0 110 2H5a1 1 0 01-1-1zm0 5a1 1 0 011-1h14a1 1 0 110 2H5a1 1 0 01-1-1z"
+                        clip-rule="evenodd" />
+                </svg>
+            </button>
+        </div>
+    </div>
+    <!-- Mobile Menu (hidden by default) -->
+    <div id="mobile-menu" class="md:hidden hidden">
+        <div class="flex flex-col space-y-4">
+            <a href="#" class="hover:text-gray-400 transition duration-300 ease-in-out">Home</a>
+            <a href="#products" class="hover:text-gray-400 transition duration-300 ease-in-out">Products</a>
+            
+            
+        </div>
+    </div>
+</header>
+
+ 
+
+
+  <section class=" bg-gray-900 bg-hero-image">
+    <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+        <div class="mr-auto place-self-center lg:col-span-7">
+            <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-white">Payments tool for software companies</h1>
+            <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl text-gray-400">From checkout to global sales tax compliance, companies around the world use Flowbite to simplify their payment stack.</p>
+            <a href="#products" class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 focus:ring-primary-900">
+                Get started
+                <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+            </a>
+            
+        </div>
+        <div class="hidden lg:mt-0 lg:col-span-5 lg:flex fade-in-up">
+            <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png" alt="mockup">
+        </div>                
+    </div>
+</section>
+ 
+    <section class="bg-gray-900 py-16" id="products">
+      <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-white mb-8">Introducing Our Latest Product</h2>
+    <div class="p-1 flex flex-wrap items-center justify-center fade-in-up shop-content">
+ <div class="flex-shrink-0 m-6 relative overflow-hidden bg-white rounded-lg max-w-xs shadow-lg group transform transition duration-500  
+        hover:scale-105 hover:shadow-2xl food-box">
+        <div class="pic">
+          <img src="assets/img/p-1.jpg" class="w-full h-48 object-cover rounded-t-lg food-img food-img">
+        </div>
+        <h2 class="block font-semibold py-2 text-xl food-title">Product 1</h2>
+        <p class="text-gray-600"> 
+                This is a simple animated card.  
+                Hover to see the effect. 
+            </p> 
+        <span class="py-2 food-price">Rs.10</span>
+        <ion-icon name="cart" class="bg-gray-900 text-white py-2 px-4 rounded-full font-bold hover:bg-gray-800 add-cart"></ion-icon>
+      </div>
+
+       <div class="flex-shrink-0 m-6 relative overflow-hidden bg-white rounded-lg max-w-xs shadow-lg group transform transition duration-500  
+        hover:scale-105 hover:shadow-2xl food-box">
+          <div class="pic">
+            <img src="assets/img/p-2.jpg" class="w-full h-48 object-cover rounded-t-lg food-img food-img">
+          </div>
+          <h2 class="block font-semibold py-2 text-xl food-title">Product 2</h2>
+            <p class="text-gray-600"> 
+                This is a simple animated card.  
+                Hover to see the effect. 
+            </p> 
+          <span class="py-2 food-price">Rs.20</span>
+          <ion-icon name="cart" class="bg-gray-900 text-white py-2 px-4 rounded-full font-bold hover:bg-gray-800 add-cart"></ion-icon>
+      </div>
+      <div class="flex-shrink-0 m-6 relative overflow-hidden bg-white rounded-lg max-w-xs shadow-lg group transform transition duration-500  
+        hover:scale-105 hover:shadow-2xl food-box">
+          <div class="pic">
+            <img src="assets/img/p-3.jpg" class="w-full h-48 object-cover rounded-t-lg food-img food-img">
+          </div>
+          <h2 class="block font-semibold py-2 text-xl food-title">Product 3</h2>
+            <p class="text-gray-600"> 
+                This is a simple animated card.  
+                Hover to see the effect. 
+            </p> 
+          <span class="py-2 food-price">Rs.30</span>
+          <ion-icon name="cart" class="bg-gray-900 text-white py-2 px-4 rounded-full font-bold hover:bg-gray-800 add-cart"></ion-icon>
+      </div>
+    </div>
+
+     
+
+  </div>
+
+    </section>
+
+   
+
+  
+<footer class="bg-gray-900 text-white py-8 px-4 sm:px-8">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
+        <!-- Social Media Links -->
+        <div class="mb-4 md:mb-0">
+            <span class="text-lg font-semibold mb-2 block">Follow Us:</span>
+            <div class="flex space-x-4">
+                <a href="#" class="text-gray-300 hover:text-gray-400 transition duration-300 ease-in-out">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M10 2a8 8 0 00-8 8c0 4.418 3.582 8 8 8s8-3.582 8-8a8 8 0 00-8-8zm5.342 6.649l1.414-1.414A.5.5 0 0016.828 7V5.5a.5.5 0 00-1 0V7c0 .128.049.243.131.331l-1.414 1.414A.5.5 0 0015 9.5v1a.5.5 0 001 0v-1a.5.5 0 00-.131-.331zM12 9.5c0 .808-.153 1.584-.432 2.304l-.843 2.11-.35.88-.758 1.894A.5.5 0 0110 16.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 00-.318-.467l-1.142-2.853a.5.5 0 00-.236-.237l-.947-.382-.948.382a.5.5 0 00-.236.237l-1.142 2.853A.5.5 0 004 16.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.131-.375l.757-1.894.35-.88.843-2.11C3.153 11.084 3 10.308 3 9.5v-.5a.5.5 0 011 0v.5c0 .808.153 1.584.432 2.304l.843 2.11.35.88.758 1.894c.097.242.284.437.519.553l.947.382.948-.382c.235-.116.422-.311.519-.553l.758-1.894.35-.88.843-2.11c.279-.72.432-1.496.432-2.304v-.5a.5.5 0 011 0v.5z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </a>
+                <!-- Add more social media links similarly -->
+            </div>
+        </div>
+        <!-- Newsletter Signup Form -->
+        <div class="mb-4 md:mb-0">
+            <span class="text-lg font-semibold mb-2 block">Subscribe to Our Newsletter:</span>
+            <form class="flex items-center">
+                <input type="email"
+                    class="bg-gray-800 text-gray-300 border-2 border-gray-700 rounded-l-md px-4 py-2 focus:outline-none focus:border-blue-500"
+                    placeholder="Your Email Address">
+                <button type="submit"
+                    class="bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-r-md px-4 py-2 transition duration-300 ease-in-out focus:outline-none">Subscribe</button>
+            </form>
+        </div>
+    </div>
+    <!-- Copyright Notice -->
+    <div class="text-center mt-4">
+        <p class="text-sm">&copy; 2024 Your Company. All rights reserved.</p>
+    </div>
+</footer>
+
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
